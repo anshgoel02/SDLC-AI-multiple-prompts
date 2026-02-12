@@ -1,0 +1,38 @@
+R&D Sensory Insights Platform - Kickoff Meeting Transcript
+Date: 2025-05-30
+
+LI, ANGELA 0:02
+We are kicking off a new platform called the R&D Sensory Insights Platform to centralize sensory testing data and make historical trend analysis possible.
+
+SHARMA, DEEPAK 0:18
+Today the data sits in spreadsheets and shared drives, so it takes days to find past results.
+
+LI, ANGELA 0:34
+This is a greenfield project; we don't have an existing system for this.
+
+SOONG, JENN 0:50
+Primary workflow: intake test requests from R&D and Marketing, then assign tests to external sensory agencies.
+
+LI, ANGELA 1:05
+After tests, vendors upload raw results; we will standardize the data and publish insights in Power BI dashboards.
+
+SHARMA, DEEPAK 1:22
+For authentication, internal users must use Azure AD.
+
+SOONG, JENN 1:35
+Assumption: vendors will access an external portal we provide.
+
+LI, ANGELA 1:48
+Constraint: data refresh should run nightly.
+
+SHARMA, DEEPAK 2:02
+Risk: vendor data formats are inconsistent and may require extra cleansing.
+
+LI, ANGELA 2:20
+Out of scope for phase 1 is ERP integration.
+
+SOONG, JENN 2:34
+Open question: which vendor portal solution do we use or build?
+
+LI, ANGELA 2:46
+Open question: what SLAs apply for test turnaround time?
