@@ -2,8 +2,20 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
+import sys
 
 from dotenv import load_dotenv
+
+# Support running this file directly: `python brd_agent_2\brd_agent_2.py`
+# Without this, the file name can shadow the package and break imports.
+if __package__ is None or __package__ == "":
+    _pkg_dir = Path(__file__).resolve().parent
+    _parent = str(_pkg_dir.parent)
+    _pkg_dir_str = str(_pkg_dir)
+    if _pkg_dir_str in sys.path:
+        sys.path.remove(_pkg_dir_str)
+    if _parent not in sys.path:
+        sys.path.insert(0, _parent)
 
 from brd_agent_2.config import Settings
 from brd_agent_2.models import BRDState
